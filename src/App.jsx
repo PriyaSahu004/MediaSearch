@@ -11,13 +11,16 @@ import FooterPage from './components/FooterPage'
 const App = () => {
   
   return (
-    <div className='w-full bg-gray-900 text-white'>
+    <div className='min-h-screen bg-gray-900 text-white flex flex-col'>
       <Navbar/>
+      <main className='flex-1'>
+
       <Routes>
         <Route path="/" element={<HomePage />}/>
         <Route path="/collection"  element={<CollectionPage/>}/>
       </Routes>
       <ToastContainer/>
+      </main>
       <FooterPage/>
       
     </div>
